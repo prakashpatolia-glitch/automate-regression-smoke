@@ -1,15 +1,15 @@
 {
-  "name": "checkout",
+  "name": "playwright-regression-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "private": true,
+  "description": "Small public demo for the LintQA article on what to automate first in regression testing",
+  "scripts": {
+    "test": "playwright test",
+    "smoke": "playwright test --grep @smoke --project=chromium",
+    "regression": "playwright test --grep @regression",
+    "report": "playwright show-report"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.6"
+    "@playwright/test": "1.64.1"
   }
 }
