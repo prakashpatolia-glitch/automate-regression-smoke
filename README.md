@@ -9,7 +9,7 @@ It tests the public Playwright website, so there is no private project involved.
 - Playwright 1.64.1 (`@playwright/test`)
 - Node.js 20 or newer
 
-## Run it locally
+## Run it locally.
 
 ```bash
 npm install
